@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.bar{
+    background-color: #117050;
+    width: 168px;
+    height: 22px;
+}
+h1{
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    line-height: 100px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+h2{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    line-height: 45px;
+    margin: 20px 0;
+}
+.subtittle{
+    margin-bottom: 30px;
+}
+.button{
+    display: inline-block;
+    padding: 8px 30px;
+    border: 2px solid #454545;
+    color: #454545;
+    cursor: pointer;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #454545;;
+    color: white;
+}
+
+
+/*cabeçalho*/
+header .border{
+    background-color: #117050;
+    height: 10px;
+}
+
+.box{
+    max-width: 1140px;
+    margin: auto;
+}
+.headear_area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.header_left img{
+    width: 64px;
+    height: 64px;
+}
+.header_right{
+    display: flex;
+    align-items: center;
+}
+header .menu{
+    margin-left: 50px;
+}
+header .menu img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/*menu fechado*/
+nav{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 80vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+nav ul, 
+nav li{
+    list-style: none;
+
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+}
+nav li a{
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-bottom: 5px solid #117050;
+}
+nav li a:hover{
+    color: #117050;
+}
+
+.header_search form{
+    display: flex;
+}
+.header_search input{
+    font-size: 16px;
+    padding: 8px 15px;
+    padding-right: 40px;
+    border: 1px solid #999999;
+    outline: 0;
+    width: 100%;
+    max-width: 250px;
+}
+.header_search button{
+    border: 0;
+    background-color: transparent;
+    margin-left: -30px;
+    cursor: pointer;
+}
+.header_search button img{
+    width:16px;
+    height:16px;
+}
+
+/*slides*/
+
+.banner{
+    background-image: url(./imagens/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.banner_images{
+    margin-top: 60px;
+}
+.banner_images img{
+    width: 148px;
+    height: 148px;
+    border: 6px solid #117050;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+/*conteudo1*/
+.area1{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+}
+
+.area1_content{
+    padding: 100px;
+}
+.area1_content p{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+.area1_img1{
+    background-image: url(./imagens/f2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+.area1_img2{
+    background-image: url(./imagens/f1.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+/*conteudo2*/
+.area2{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+}
+
+.area2_content{
+    padding: 100px;
+}
+.area2_content p{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+.area2_img1{
+    background-image: url(./imagens/f4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+.area2_img2{
+    background-image: url(./imagens/f3.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+/*conteudo3*/
+.area3{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+
+.area3_content{
+    padding: 200px 80px;
+    background-image: url(./imagens/bg2.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.area3_content p{
+    line-height: 25px;
+}
+.area3_img1{
+    background-image: url(./imagens/f5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*conteudo4*/
+
+.area4{
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    background-color: #e8e9ee;
+}
+.area4_content{
+    padding: 150px 100px;
+}
+.area4_img1{
+    background-image: url(./imagens/bg3.jpg);
+    background-position: left;
+}
+.area4_content .button,
+.area3_content .button{
+    margin-top: 30px;
+}
+.area4_content p{
+    line-height: 25px;
+}
+
+/*conteudo5*/
+.area5{
+    background-image: url(imagens/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+/*rodapé*/
+
+footer{
+    background-color: #117050;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+@media(min-width: 769px) and (max-width: 1140px){
+    .box{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    .box{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .area1{
+        display: grid;
+        grid-template-columns: 3fr 2fr ;
+    }
+    .area2{
+        display: grid;
+        grid-template-columns: 2fr 3fr ;
+    }
+    .area3{
+        display: grid;
+        grid-template-columns: 3fr 2fr ;
+    }
+    nav li a{
+        font-size: 15px;
+        border-bottom: 2px solid #117050;
+    }
+}
+
+@media (max-width: 425px){
+    .box{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header_search{
+        max-width: 130px;
+    }
+    header .menu {
+        margin-left: 20px;
+    }
+    nav li a{
+        font-size: 12px;
+        border-bottom: 1px solid #117050;
+    }
+    h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    h2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .banner_images img{
+        width: 80px;
+        height: 80px;
+        border: 3px solid #117050;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .area1{
+        grid-template-columns: 1fr;
+    }
+    .area1_content{
+        padding: 40px;
+    }
+    .area2{
+        grid-template-columns: 1fr;
+    }
+    .area2_content{
+        padding: 40px;
+    }
+    .area3{
+        grid-template-columns: 1fr;
+    }
+    .area3_content{
+        padding: 40px;
+    }
+    .area4{
+        grid-template-columns: 1fr;
+    }
+    .area4_content{
+        padding: 40px;
+    }
+    .area5{
+        height: 200px;
+    }
+    footer {
+        background-color: #117050;
+        color: white;
+        font-size: 12px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+}
